@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency "kaminari"
 
   # populate =================================================
-  s.add_dependency "faker"  
+  s.add_dependency "faker"
 
   # assets processors ========================================
   # s.add_dependency "compass"
@@ -31,10 +31,10 @@ Gem::Specification.new do |s|
   # s.add_dependency "coffee-rails", "~> 3.2.1"
   s.add_dependency "slim"
   s.add_dependency "slim-rails"
-  s.add_dependency 'sass', '3.2.10'
+  s.add_dependency 'sass'
   s.add_dependency 'sass-rails'
 
-  # # assets libraries =========================================  
+  # # assets libraries =========================================
   # s.add_dependency "jquery-rails"
   # s.add_dependency 'underscore-rails'
   # s.add_dependency 'jquery-fileupload-rails'
@@ -49,13 +49,13 @@ Gem::Specification.new do |s|
   s.add_dependency 'carrierwave'
 
   s.add_development_dependency "sqlite3"
-  s.add_development_dependency "debugger"  
-  s.add_development_dependency 'better_errors', '1.1.0'
-  s.add_development_dependency 'jazz_hands'
-  s.add_development_dependency 'pry-alias'
-  s.add_development_dependency 'binding_of_caller'
+  # s.add_development_dependency "debugger"
+  # s.add_development_dependency 'better_errors', '1.1.0'
+  # s.add_development_dependency 'jazz_hands'
+  # s.add_development_dependency 'pry-alias'
+  # s.add_development_dependency 'binding_of_caller'
   s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'factory_girl_rails'
+  # s.add_development_dependency 'factory_girl_rails'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'formulaic'
   s.add_development_dependency 'guard-rspec'
