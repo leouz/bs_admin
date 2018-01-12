@@ -4,11 +4,11 @@ BsAdmin::Engine.routes.draw do
 
   root :to => 'sessions#new'
 
-  match 'login' => 'sessions#create', as: :login
-  match 'logout' => 'sessions#destroy', as: :logout
+  get 'login' => 'sessions#create', as: :login
+  get 'logout' => 'sessions#destroy', as: :logout
 
-  match 'settings-group(/:key)' => 'settings#index', as: :settings_group
-  match 'edit-setting/:group_key/:type/:key' => 'settings#edit', as: :edit_setting
+  get 'settings-group(/:key)' => 'settings#index', as: :settings_group
+  get 'edit-setting/:group_key/:type/:key' => 'settings#edit', as: :edit_setting
   put 'update-setting' => 'settings#update', as: :update_setting
 
   post '/assets/summernote-upload' => 'assets#summernote_upload'

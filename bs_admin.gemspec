@@ -17,7 +17,10 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   # core =====================================================
-  s.add_dependency "rails"
+  s.add_dependency "rails", '~> 4.2.1'
+  s.add_dependency 'ruby_dep', '1.3'
+  s.add_dependency 'listen', '~> 3.0.8'
+  s.add_dependency 'protected_attributes'
 
   # model helpers ============================================
   s.add_dependency "kaminari"
@@ -33,6 +36,7 @@ Gem::Specification.new do |s|
   s.add_dependency "slim-rails"
   s.add_dependency 'sass'
   s.add_dependency 'sass-rails'
+
 
   # # assets libraries =========================================
   # s.add_dependency "jquery-rails"
